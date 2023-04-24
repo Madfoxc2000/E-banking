@@ -1,0 +1,64 @@
+﻿<Window x:Class="EBanking.UI.Views.DetaljiTransakcijeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EBanking.UI.Views"
+        mc:Ignorable="d"
+        DataContext="{Binding DetaljiTransakcijeView, Mode=OneWay, Source={StaticResource Locator}}"
+        Title="Detalji o transakciji" Height="450" Width="800">
+    <Border CornerRadius="12">
+        <Border.Background>
+            <ImageBrush ImageSource="..\Resources\background2.jpg"/>
+        </Border.Background>
+        <Border CornerRadius="10"
+            BorderThickness="2"
+            Opacity="0.8">
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#462AD8" Offset="0"/>
+                    <GradientStop Color="#DA34AE" Offset="0.75"/>
+                    <GradientStop Color="#8A16C1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#060531" Offset="0"/>
+                    <GradientStop Color="#1B1448" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+
+            <Grid>
+                <Label Content="Broj računa" HorizontalAlignment="Left" Margin="109,115,0,0" VerticalAlignment="Top" FontSize="14px" Width="90" Foreground="white"/>
+                <Label Content="{Binding Model.Transakcija.BrojRacuna, Mode=TwoWay}"  HorizontalAlignment="Left" Margin="328,116,0,0" VerticalAlignment="Top" Height="28" RenderTransformOrigin="0.456,1.424" Width="130" Foreground="white">
+
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <Label Content="Id transakcije" HorizontalAlignment="Left" Margin="109,79,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.589,0.624" Height="35" Width="105" FontSize="14px" Foreground="white"/>
+                <Label Content="{Binding Model.Transakcija.IdTransakcije}" HorizontalAlignment="Left" Margin="320,75,0,0" VerticalAlignment="Top" Width="170" Height="35" FontSize="14px" RenderTransformOrigin="0.483,0.515" Foreground="white"/>
+                <Label Content="Količina novca" HorizontalAlignment="Left" Margin="110,183,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.399,1.612" FontSize="14px" Foreground="white"/>
+                <Label Content="{Binding Model.Transakcija.KolicinaNovca}" HorizontalAlignment="Left" Margin="320,174,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.088,0.753" FontSize="14px" Height="35" Width="170" Foreground="white"/>
+                <Label Content="Balans nakon transakcije" HorizontalAlignment="Left" Margin="109,215,0,0" VerticalAlignment="Top" Width="161" FontSize="14px" Foreground="white"/>
+                <Label Content="Datum" HorizontalAlignment="Left" Margin="110,249,0,0" VerticalAlignment="Top" FontSize="14px" Foreground="white"/>
+                <Label Content="Naziv platioca/primaoca" HorizontalAlignment="Left" Margin="110,283,0,0" VerticalAlignment="Top" FontSize="14px" Foreground="white"/>
+                <Label Content="Broj računa platioca/primaoca" HorizontalAlignment="Left" Margin="109,317,0,0" VerticalAlignment="Top" Width="214" Height="35" FontSize="14px" Foreground="white"/>
+                <Label Content="{Binding Model.Transakcija.BalansNakonTransakcije}" HorizontalAlignment="Left" Margin="320,215,0,0" VerticalAlignment="Top" FontSize="14px" Height="35" Width="168" Foreground="white"/>
+                <Label Content="{Binding Model.Transakcija.Datum}" HorizontalAlignment="Left" Margin="300,249,0,0" VerticalAlignment="Top" Height="35" Width="162" FontSize="14px" Foreground="white"/>
+                <Label Content="{Binding Model.Transakcija.NazivSekundarnogAktera}" HorizontalAlignment="Left" Margin="320,283,0,0" VerticalAlignment="Top" Height="35" Width="170" FontSize="14px" Foreground="white"/>
+                <Label Content="{Binding Model.Transakcija.BrojRacunaSekundarnogAktera}" HorizontalAlignment="Left" Margin="320,317,0,0" VerticalAlignment="Top" Height="35" Width="208" FontSize="14px" Foreground="white"/>
+                <Label Content="Broj Kartice" HorizontalAlignment="Left" Margin="109,149,0,0" VerticalAlignment="Top" Width="87" FontSize="14px" Foreground="white"/>
+                <Label Content="{Binding Model.Transakcija.BrojKartice}" HorizontalAlignment="Left" Margin="320,141,0,0" VerticalAlignment="Top" Width="137" FontSize="14px" Height="35" RenderTransformOrigin="0.504,0.502" Foreground="white"/>
+            </Grid>
+        </Border>
+    </Border>
+
+</Window>

@@ -1,0 +1,12 @@
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\bin\Debug\net6.0\EBanking.DataAccess.deps.json
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\bin\Debug\net6.0\EBanking.DataAccess.dll
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\bin\Debug\net6.0\EBanking.DataAccess.pdb
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\obj\Debug\net6.0\EBanking.DataAccess.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\obj\Debug\net6.0\EBanking.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\obj\Debug\net6.0\EBanking.DataAccess.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\obj\Debug\net6.0\EBanking.DataAccess.AssemblyInfo.cs
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\obj\Debug\net6.0\EBanking.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\obj\Debug\net6.0\EBanking.DataAccess.dll
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\obj\Debug\net6.0\refint\EBanking.DataAccess.dll
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\obj\Debug\net6.0\EBanking.DataAccess.pdb
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.DataAccess\obj\Debug\net6.0\ref\EBanking.DataAccess.dll

@@ -1,0 +1,70 @@
+﻿<Window x:Class="EBanking.UI.Views.RacunView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EBanking.UI.Views"
+        mc:Ignorable="d"
+        DataContext="{Binding RacunView, Source={StaticResource Locator}}"
+        Title="{Binding Model.Title}" Height="600" Width="900" >
+    <Border CornerRadius="12">
+        <Border.Background>
+            <ImageBrush ImageSource="..\Resources\background2.jpg"/>
+
+        </Border.Background>
+        <Border CornerRadius="10"
+            BorderThickness="2"
+            Opacity="0.8">
+
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#462AD8" Offset="0"/>
+                    <GradientStop Color="#DA34AE" Offset="0.75"/>
+                    <GradientStop Color="#8A16C1" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Color="#060531" Offset="0"/>
+                    <GradientStop Color="#1B1448" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+
+                <Label Content="Dobro došli" HorizontalAlignment="Left" Height="39" Margin="10,32,0,0" VerticalAlignment="Top" Width="112" FontSize="18px" Foreground="White"/>
+                <Label Content="Izabran račun:" HorizontalAlignment="Left" Height="40" Margin="423,119,0,0" VerticalAlignment="Top" Width="141" FontSize="18px" Foreground="White"/>
+                <Label Content="Balans:" HorizontalAlignment="Left" Height="39" Margin="423,201,0,0" VerticalAlignment="Top" Width="141" FontSize="18px" Foreground="White"/>
+                <Label Content="Vaši računi" HorizontalAlignment="Left" Height="37" Margin="165,88,0,0" VerticalAlignment="Top" Width="94" FontSize="16px" Foreground="White"/>
+                <Label Content="{Binding Model.ImeKorsnika}" HorizontalAlignment="Left" Height="39" Margin="120,32,0,0" VerticalAlignment="Top" Width="189" FontSize="18px" Foreground="White"/>
+                <Label Content="{Binding Model.IzabranRacun.BrojRacuna, Mode=TwoWay}" HorizontalAlignment="Left" Height="34" Margin="426,156,0,0" VerticalAlignment="Top" Width="193" FontSize="18px" Foreground="White"/>
+                <DataGrid ItemsSource="{Binding Model.Racuni, Mode=TwoWay}" SelectedItem="{Binding Model.IzabranRacun, Mode=TwoWay}" MaxHeight="300" FontSize="15" IsSynchronizedWithCurrentItem="True" Name="GridRacuni" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10,124,486,300" VerticalScrollBarVisibility="Auto"
+                  ScrollViewer.CanContentScroll="True" 
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Broj Racuna" IsReadOnly="true" Binding="{Binding BrojRacuna}" Width="1.5*"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Tip racuna" IsReadOnly="true" Binding="{Binding Tip}" Width="1.5*"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Valuta" IsReadOnly="true" Binding="{Binding Valuta}" Width="1.5*"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Content="Novo placanje" Command="{Binding PlacanjeCommand}" HorizontalAlignment="Left" Margin="592,490,0,0" VerticalAlignment="Top" Height="36" Width="100" FontSize="14px"/>
+                <Label Content="{Binding Model.IzabranRacun.Balans}" HorizontalAlignment="Left" Margin="426,244,0,0" VerticalAlignment="Top" Height="30" Width="130" Foreground="White" FontSize="14px"/>
+                <DataGrid ItemsSource="{Binding Model.IzabranRacun.Transakcije, Mode=TwoWay}" SelectedItem="{Binding Model.IzabranaTransakcija, Mode=TwoWay}" MaxHeight="300" FontSize="15" IsSynchronizedWithCurrentItem="True" x:Name="GridRacuni_Copy" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10,325,486,35" VerticalScrollBarVisibility="Auto"
+            ScrollViewer.CanContentScroll="True" 
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Broj racuna" IsReadOnly="true" Binding="{Binding BrojRacuna}" Width="1.5*"/>
+                        <DataGridTextColumn Header="Kolicina Novca" IsReadOnly="true" Binding="{Binding KolicinaNovca}" Width="1.5*"/>
+                        <DataGridTextColumn Header="DatumKreiranja" IsReadOnly="true" Binding="{Binding Datum}" Width="1.5*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Label Content="Vaše transakcije " HorizontalAlignment="Left" Height="31" Margin="150,289,0,0" VerticalAlignment="Top" Width="124" FontSize="16px" Foreground="White"/>
+                <Button Command="{Binding OtvoriMenjacnicuCommand}" Content="Menjacnica" HorizontalAlignment="Left" Margin="732,489,0,0" VerticalAlignment="Top" Height="38" Width="94" FontSize="14px"/>
+                <Button Command="{Binding IzlogujSeCommand}" Content="Izloguj se" HorizontalAlignment="Left" Margin="760,44,0,0" VerticalAlignment="Top" Height="30" Width="66"/>
+                <Button Content="Detalji transakcije"  Command="{Binding DetaljiTransakcijeCommand}"  HorizontalAlignment="Left" Margin="426,490,0,0" VerticalAlignment="Top" Height="36" Width="125" FontSize="14px"/>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

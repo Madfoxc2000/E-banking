@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\bin\Debug\net6.0\EBanking.Services.deps.json
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\bin\Debug\net6.0\EBanking.Services.dll
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\bin\Debug\net6.0\EBanking.Services.pdb
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\bin\Debug\net6.0\EBanking.DataAccess.dll
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\bin\Debug\net6.0\EBanking.DataAccess.pdb
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\obj\Debug\net6.0\EBanking.Services.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\obj\Debug\net6.0\EBanking.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\obj\Debug\net6.0\EBanking.Services.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\obj\Debug\net6.0\EBanking.Services.AssemblyInfo.cs
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\obj\Debug\net6.0\EBanking.Services.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\obj\Debug\net6.0\EBanking.Services.csproj.CopyComplete
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\obj\Debug\net6.0\EBanking.Services.dll
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\obj\Debug\net6.0\refint\EBanking.Services.dll
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\obj\Debug\net6.0\EBanking.Services.pdb
+C:\Users\DELL\Desktop\EBanking-develop\EBanking.Services\obj\Debug\net6.0\ref\EBanking.Services.dll
